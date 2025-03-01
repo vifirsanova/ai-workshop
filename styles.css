@@ -1,0 +1,363 @@
+body {
+  background-color: #000;
+  color: #ffeffe;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: PP Neue Corp Wide, sans-serif;
+  font-size: 7vw;
+  font-weight: 900;
+  line-height: 1;
+  position: relative;
+  filter: drop-shadow(0 0 0.08em rgb(255, 100, 255));
+  margin-left: 1vw;
+}
+
+h2 {
+  font-family: PP Neue Corp Wide, sans-serif;
+  color: rgba(255, 10, 100, 40%);
+  font-size: 4vw;
+  font-weight: 900;
+  line-height: 1;
+  position: relative;
+  filter: drop-shadow(0 0 0.08em rgb(255, 10, 100));
+  margin-left: 5vw;
+}
+
+
+.parallax__fade {
+  --color-dark-rgb: 0, 0, 0;
+	background: linear-gradient(to top, rgba(var(--color-dark-rgb), 1) 0%, rgba(var(--color-dark-rgb), 0.738) 19%, rgba(var(--color-dark-rgb), 0.541) 34%, rgba(var(--color-dark-rgb), 0.382) 47%, rgba(var(--color-dark-rgb), 0.278) 56.5%, rgba(var(--color-dark-rgb), 0.194) 65%, rgba(var(--color-dark-rgb), 0.126) 73%, rgba(var(--color-dark-rgb), 0.075) 80.2%, rgba(var(--color-dark-rgb), 0.042) 86.1%, rgba(var(--color-dark-rgb), 0.021) 91%, rgba(var(--color-dark-rgb), 0.008) 95.2%, rgba(var(--color-dark-rgb), 0.002) 98.2%, transparent 100%);
+}
+
+.osmo-icon-svg {
+  width: 8em;
+  position: relative;
+}
+
+.parallax__header {
+  z-index: 2;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  display: flex;
+  position: relative;
+}
+
+.parallax {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax__content {
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  display: flex;
+  position: relative;
+}
+
+.cover {
+  object-fit: cover;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parallax__visuals {
+  object-fit: cover;
+  width: 100%;
+  max-width: none;
+  height: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parallax__placeholder {
+  z-index: 0;
+  opacity: 0;
+  object-fit: cover;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parallax__layers {
+  object-fit: cover;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.cover-copy {
+  object-fit: cover;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parallax__fade {
+  z-index: 30;
+  object-fit: cover;
+  width: 100%;
+  max-width: none;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__black-line-overflow {
+  z-index: 20;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.parallax__title {
+  pointer-events: auto;
+  text-align: center;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: .1em;
+  margin-right: .075em;
+  font-family: PP Neue Corp Wide, sans-serif;
+  font-size: 10vw;
+  font-weight: 900;
+  line-height: 1;
+  position: relative;
+  color: rgba(255, 250, 100, 0.7);
+  filter: drop-shadow(0 0 0.08em rgb(200, 200, 200));  
+}
+
+.parallax__radial-gradient {
+  z-index: 10;
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, var(--color-black));
+  opacity: .5;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  position: fixed;
+  inset: 0;
+}
+
+.parallax__layer-title {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parallax__layer-img {
+  pointer-events: none;
+  object-fit: cover;
+  width: 100%;
+  max-width: none;
+  height: 117.5%;
+  position: absolute;
+  top: -17.5%;
+  left: 0;
+}
+
+.parallax__layer-img.is-third {
+  top: -20%;
+}
+
+@font-face {
+  font-family: 'PP Neue Corp Wide';
+  src: url('https://cdn.prod.website-files.com/671752cd4027f01b1b8f1c7f/6717e399d30a606fed425914_PPNeueCorp-WideUltrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+.parallax__footer_l {
+  display:flex;
+  align-items: left;
+  margin-left: 5vw;
+}
+
+.parallax__footer_r {
+  display:flex;
+  align-items: right;
+  margin-left: 17vw;
+  margin-right: 4vw;
+}
+
+.blue_glow {
+  font-size: 20vw;
+  animation: glow 1.5s infinite alternate;
+}
+
+.main_text {
+  filter: drop-shadow(0 0 0.05em rgb(150, 100, 255));
+  margin-left: 5vw;
+  font-size: 5vw;
+}
+
+.pink_glow {
+  font-size: 20vw;
+  animation: pink_glow 1.5s infinite alternate;
+}
+
+.main_text_pink {
+  filter: drop-shadow(0 0 0.04em rgb(255, 100, 150));
+  margin-right: 5vw;
+  font-size: 5vw;
+  text-align: right;
+}
+
+.main_text_center {
+
+  filter: drop-shadow(0 0 0.01em rgb(255, 150, 200));
+  margin-right:9.5vw;
+  padding: 0;
+  font-size: 4vw;
+  text-align: center;
+
+}
+
+.parallax__footer_gradient {
+  height: 100vh;
+  background: rgb(255,255,255);
+
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255, 50, 100) 50%, rgba(255,255,255,1) 100%);
+  }
+
+li {
+  font-family: PP Neue Corp Wide, sans-serif;
+  color: rgb(50, 15, 25);
+  font-size: 2.5vw;
+  font-weight: 100;
+  line-height: 180%;
+  position: relative;
+  margin-right: 5vw;
+  margin-left: 0.1vw;
+  list-style-type: none;
+}
+
+@keyframes pink_glow {
+  from {
+    filter: drop-shadow(0 0 0.04em rgb(255, 100, 150));
+  }
+  to {
+    filter: drop-shadow(0 0 0.06em rgb(255, 100, 150));
+  }
+}
+
+.parallax__footer {
+  z-index: 2;
+
+  padding: 0;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100svh;
+
+  display: flex;
+
+  position: relative;
+background: linear-gradient(180deg, #000, #ff9671, #fff);
+}
+
+.parallax__footer_w {
+ 
+  z-index: 2;
+
+  padding: 0;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100svh;
+
+  display: flex;
+  
+  position: relative;
+background: rgb(255,255,255);
+}
+
+a {
+  text-decoration: none;
+  font-family: PP Neue Corp Wide, sans-serif;
+  font-size: 4vw;
+  background: linear-gradient(90deg, #fff, #0000ff, #ff6f91, #ff9671, #ffc75f, #fff);
+    background-size: 300%;
+    background-position: left;
+    background-clip: text;
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-bg-animation 10s infinite;
+}
+@keyframes text-bg-animation{
+    0%{background-position:0% 87%}
+    50%{background-position:100% 14%}
+    100%{background-position:0% 87%}
+}
+
+h3 {
+  font-size: 3vw;
+  margin: 0 1em;
+  line-height: 1.5;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.parallax__fade {
+  --color-dark-rgb: 0, 0, 0;
+ background: linear-gradient(to top, rgba(var(--color-dark-rgb), 1) 0%, rgba(var(--color-dark-rgb), 0.738) 19%, rgba(var(--color-dark-rgb), 0.541) 34%, rgba(var(--color-dark-rgb), 0.382) 47%, rgba(var(--color-dark-rgb), 0.278) 56.5%, rgba(var(--color-dark-rgb), 0.194) 65%, rgba(var(--color-dark-rgb), 0.126) 73%, rgba(var(--color-dark-rgb), 0.075) 80.2%, rgba(var(--color-dark-rgb), 0.042) 86.1%, rgba(var(--color-dark-rgb), 0.021) 91%, rgba(var(--color-dark-rgb), 0.008) 95.2%, rgba(var(--color-dark-rgb), 0.002) 98.2%, transparent 100%);
+}
+
+.osmo-icon-svg {
+  width: 8em;
+  position: relative;
+}
+
+.parallax__header {
+  z-index: 2;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  display: flex;
+  position: relative;
+}
+
+.parallax {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax__content {
+  padding: 1em;
+  justify-content: center;
